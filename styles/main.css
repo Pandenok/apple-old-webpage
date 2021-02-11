@@ -1,3 +1,93 @@
 html, body {
+  height: 100vh;
   margin: 0;
 }
+
+#container * {
+  padding: 10px 10px;
+  border: 1px solid black;
+}
+
+#container {
+  width: 75%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #72DDF7;
+}
+
+nav {
+  width: 80%;
+  margin: 0 auto;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  background-color: #8093F1;
+  z-index: 10;
+}
+
+nav ul {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+}
+
+main {
+  flex: 1;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  grid-gap: 5px;
+  background-color: #FDC5F5;
+}
+
+article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #A4D4B4;
+}
+
+article .overlay {
+  position:absolute;
+  left:0;
+  top:0;
+  bottom:0;
+  right:0;
+}
+
+article .inner {
+  position:relative;
+  text-align: center;
+  pointer-events: none;
+  z-index: 1;
+}
+
+article .inner a {
+  pointer-events: all;
+  position:relative;
+}
+
+a:hover {
+  color: green;
+}
+
+aside {
+  background-color: #78CDD7;
+}
+
+aside ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+  background-color: #FFCF9C;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #B388EB;
+}
+
