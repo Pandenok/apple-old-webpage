@@ -104,13 +104,26 @@ input[type=search] {
   border:0;
 }
 
+/*
+  ========================================
+  MAIN
+  ========================================
+*/
+
 main {
   flex: 1;
   display: grid;
-  grid-template-rows: 1fr auto;
-  grid-gap: 5px;
+  /* grid-template-rows: 1fr auto; */
+  grid-template-rows: 2fr 1fr;
+  grid-gap: 3px;
   background-color: #FDC5F5;
 }
+
+/*
+  ========================================
+  MAIN - ARTICLE
+  ========================================
+*/
 
 article {
   display: flex;
@@ -118,6 +131,9 @@ article {
   align-items: center;
   position: relative;
   background-color: #A4D4B4;
+  background-image: url('../images/your_verse_hero.jpg');
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
 }
 
 article .overlay {
@@ -140,15 +156,41 @@ article .inner a {
   position:relative;
 }
 
+/*
+  ========================================
+  MAIN - ASIDE
+  ========================================
+*/
+
 aside {
   background-color: #78CDD7;
 }
 
-aside ul {
+aside {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 5px;
+  grid-gap: 3px;
   background-color: #FFCF9C;
+}
+
+aside a {
+  background-repeat: no-repeat;
+}
+
+aside a:nth-child(1) {
+  background-image: url('../images/promo_iphone5s.jpg');
+}
+
+aside a:nth-child(2) {
+  background-image: url('../images/promo_iphone5c.jpg');
+}
+
+aside a:nth-child(3) {
+  background-image: url('../images/promo_30_years.jpg');
+}
+
+aside a:nth-child(4) {
+  background-image: url('../images/promo_supplier_responsibility.jpg');
 }
 
 footer {
