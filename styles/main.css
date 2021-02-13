@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "Route159 UltraLight";
+  src: url("../fonts/Route159-UltraLight.otf");
+}
+
+@font-face {
+  font-family: "Route159 Light";
+  src: url("../fonts/Route159-Light.otf");
+}
+
 * {
   box-sizing: border-box;
 }
@@ -6,6 +16,8 @@ html, body {
   height: 100vh;
   margin: 0;
   font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif
+  /* font-family: "Route159 UltraLight"; */
+  /* font-family: "Route159 Light"; */
 }
 
 a {
@@ -130,6 +142,7 @@ article {
   justify-content: center;
   align-items: center;
   position: relative;
+  color: white;
   background-color: #A4D4B4;
   background-image: url('../images/your_verse_hero.jpg');
   background-position: 50% 100%;
@@ -145,15 +158,48 @@ article .overlay {
 }
 
 article .inner {
+  width: 68%;
   position:relative;
   text-align: center;
   pointer-events: none;
   z-index: 1;
 }
 
+article .inner h1, 
+article .inner h2 {
+  font-family: "Route159 UltraLight";
+}
+
+article .inner h1 {
+  font-size: 60px;
+  margin-bottom: 50px;
+  font-weight: 500;
+}
+
+article .inner h2 {
+  margin-bottom: 27px;
+  margin-top:-24px;
+  font-size: 31px;
+  line-height: 40px;
+  font-weight: 700;
+}
+
 article .inner a {
-  pointer-events: all;
   position:relative;
+  padding-right: 37px;
+  font-family: "Route159 Light";
+  font-size: 23px;
+  letter-spacing: -0.1px;
+  color: white;
+  pointer-events: all;
+  background-image: url(../images/play-icon.svg);
+  background-repeat: no-repeat;
+  background-size: 29px;
+  background-position: 100% center;
+}
+
+article .inner a:hover {
+  text-decoration: underline;
 }
 
 /*
@@ -173,24 +219,20 @@ aside {
   background-color: #FFCF9C;
 }
 
-aside a {
-  background-repeat: no-repeat;
-}
-
 aside a:nth-child(1) {
-  background-image: url('../images/promo_iphone5s.jpg');
+  background: url('../images/promo_iphone5s.jpg') no-repeat;
 }
 
 aside a:nth-child(2) {
-  background-image: url('../images/promo_iphone5c.jpg');
+  background: url('../images/promo_iphone5c.jpg') no-repeat;
 }
 
 aside a:nth-child(3) {
-  background-image: url('../images/promo_30_years.jpg');
+  background: url('../images/promo_30_years.jpg') no-repeat;
 }
 
 aside a:nth-child(4) {
-  background-image: url('../images/promo_supplier_responsibility.jpg');
+  background: url('../images/promo_supplier_responsibility.jpg') no-repeat;
 }
 
 footer {
