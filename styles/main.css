@@ -15,19 +15,12 @@
 html, body {
   height: 100vh;
   margin: 0;
-  font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif
-  /* font-family: "Route159 UltraLight"; */
-  /* font-family: "Route159 Light"; */
+  font-family: Helvetica, Arial, Verdana, sans-serif
 }
 
 a {
   text-decoration: none;
-  color: black;
-}
-
-#container * {
-  /* padding: 10px 10px; */
-  /* border: 1px solid black; */
+  color: white;
 }
 
 #container {
@@ -37,7 +30,6 @@ a {
   position: relative;
   display: flex;
   flex-direction: column;
-  /* background-color: #72DDF7; */
 }
 
 /*
@@ -83,7 +75,6 @@ nav a {
   align-items: center;
   justify-content: center;
   padding: 8px 0;
-  color: white;
   font-weight: 600;
   box-shadow: inset 0 0 2px #9b9b9b;
 }
@@ -106,9 +97,8 @@ nav ul li {
 input[type=search] {
   width: 80%;
   padding-left: 25px;
-  /* height: 100%; */
   background-image: url('data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGJhc2VQcm9maWxlPSJmdWxsIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWxuczpldj0iaHR0cDovL3d3dy53My5vcmcvMjAwMS94bWwtZXZlbnRzIj4KPGcgZmlsbC1vcGFjaXR5PSIuNSI%2BCgk8cG9seWdvbiBwb2ludHM9IjkuMjA3LDcuMTI2IDcuNzkzLDguNTQxIDExLjc5MywxMi41NDEgMTMuMjA3LDExLjEyNiIgLz4KCTxwYXRoIGQ9Ik01LjkxNywzYzEuNjA4LDAsMi45MTcsMS4zMDgsMi45MTcsMi45MTdTNy41MjUsOC44MzMsNS45MTcsOC44MzNTMyw3LjUyNSwzLDUuOTE3UzQuMzA4LDMsNS45MTcsMyBNNS45MTcsMQoJCUMzLjIwMSwxLDEsMy4yMDEsMSw1LjkxN3MyLjIwMSw0LjkxNyw0LjkxNyw0LjkxN3M0LjkxNy0yLjIwMSw0LjkxNy00LjkxN0MxMC44MzMsMy4yMDEsOC42MzIsMSw1LjkxNywxTDUuOTE3LDF6IiAvPgo8L2c%2BCjxnPgoJPHBvbHlnb24gZmlsbD0iI2ZmZiIgcG9pbnRzPSI5LjIwNyw2LjEyNiA3Ljc5Myw3LjU0MSAxMS43OTMsMTEuNTQxIDEzLjIwNywxMC4xMjYiIC8%2BCgk8cGF0aCBmaWxsPSIjZmZmIiBkPSJNNS45MTcsMmMxLjYwOCwwLDIuOTE3LDEuMzA4LDIuOTE3LDIuOTE3UzcuNTI1LDcuODMzLDUuOTE3LDcuODMzUzMsNi41MjUsMyw0LjkxN1M0LjMwOCwyLDUuOTE3LDIKCQkgTTUuOTE3LDBDMy4yMDEsMCwxLDIuMjAxLDEsNC45MTdzMi4yMDEsNC45MTcsNC45MTcsNC45MTdzNC45MTctMi4yMDEsNC45MTctNC45MTdDMTAuODMzLDIuMjAxLDguNjMyLDAsNS45MTcsMEw1LjkxNywweiIgLz4KPC9nPgo8L3N2Zz4K');
-  background-position: 5px 5px;
+  background-position: 5px 4px;
   background-repeat: no-repeat;
   background-color: transparent;
   border-radius: 12px;
@@ -125,10 +115,8 @@ input[type=search] {
 main {
   flex: 1;
   display: grid;
-  /* grid-template-rows: 1fr auto; */
-  grid-template-rows: 2fr 1fr;
-  grid-gap: 3px;
-  background-color: #FDC5F5;
+  grid-template-rows: 3.2fr 1fr;
+  grid-gap: 2px;
 }
 
 /*
@@ -143,7 +131,6 @@ article {
   align-items: center;
   position: relative;
   color: white;
-  background-color: #A4D4B4;
   background-image: url('../images/your_verse_hero.jpg');
   background-position: 50% 100%;
   background-repeat: no-repeat;
@@ -190,7 +177,6 @@ article .inner a {
   font-family: "Route159 Light";
   font-size: 23px;
   letter-spacing: -0.1px;
-  color: white;
   pointer-events: all;
   background-image: url(../images/play-icon.svg);
   background-repeat: no-repeat;
@@ -209,14 +195,9 @@ article .inner a:hover {
 */
 
 aside {
-  background-color: #78CDD7;
-}
-
-aside {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 3px;
-  background-color: #FFCF9C;
+  grid-gap: 2px;
 }
 
 aside a:nth-child(1) {
@@ -250,7 +231,6 @@ footer {
   color: #6e6e6e;
   font-size: 10px;
   line-height: 1.2;
-  /* background-color: #B388EB; */
 }
 
 footer * {
